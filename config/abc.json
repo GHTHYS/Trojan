@@ -1,8 +1,8 @@
 [
 	{
-	"moudle" : "dirlist"
+	"module" : "dirlist"
 	},
 	{
-	"moudle" : "environment"
+	"module" : "environment"
 	}
 ]
